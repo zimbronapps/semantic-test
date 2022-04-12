@@ -58,14 +58,7 @@
 				{
 					"pkgRoot": "package"
 				}
-			],
-			[
-				"@semantic-release/github",
-				{
-					"pkgRoot": "package"
-				}
-			],
-			"@semantic-release/git"
+			]
 		],
 		"branches": [
 			"main"
