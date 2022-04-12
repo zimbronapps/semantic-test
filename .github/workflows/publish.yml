@@ -40,7 +40,7 @@ jobs:
       - run: npm ci
       - run: npm run semantic-release pre
       - run: npm run package
-      - run: npm run publish ./package
+      - run: cd package
       - run: npm run semantic-release post
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
