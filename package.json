@@ -41,7 +41,7 @@
 	},
 	"type": "module",
 	"publishConfig": {
-		"access": "restricted"
+		"access": "public"
 	},
 	"config": {
 		"commitizen": {
@@ -59,7 +59,12 @@
 					"pkgRoot": "package"
 				}
 			],
-			"@semantic-release/github",
+			[
+				"@semantic-release/github",
+				{
+					"pkgRoot": "package"
+				}
+			],
 			"@semantic-release/git"
 		],
 		"branches": [
